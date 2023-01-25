@@ -5,3 +5,7 @@ git config --global --add safe.directory /opt/php-src
 alias ll='ls -la'
 alias php=/opt/php-src/sapi/cli/php
 
+# Generate ctags file
+touch /opt/tags
+ctags -f /opt/tags -R /opt/php-src > /dev/null 2>/dev/null &
+

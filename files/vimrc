@@ -10,3 +10,8 @@ set number
 filetype plugin indent on
 syntax on
 
+" Regenerate ctags on write
+auto BufWritePost /opt/php-src/* silent! exec "!ctags -R -f /opt/tags /opt/php-src > /dev/null 2>/dev/null &"
+
+set tags=./tags,tags;
+
