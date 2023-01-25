@@ -1,0 +1,7 @@
+git config --global user.name $GIT_USER
+git config --global user.email $GIT_EMAIL
+git config --global --add safe.directory /opt/php-src
+
+alias ll='ls -la'
+alias php=/opt/php-src/sapi/cli/php
+

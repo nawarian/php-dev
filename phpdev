@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker run --rm -it \
+    -v $(PWD):/opt/php-src \
+    -e GIT_USER=$(git config user.name) \
+    -e GIT_EMAIL=$(git config user.email) \
+    phpdev:latest
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CURRENT_PATH="$(dirname $(readlink -f $0))"
+
+docker build -t phpdev $CURRENT_PATH
+

@@ -1,0 +1,12 @@
+" Common editor settings
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set autoindent
+set hlsearch
+set incsearch
+set number
+filetype plugin indent on
+syntax on
+
