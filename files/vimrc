@@ -15,3 +15,6 @@ auto BufWritePost /opt/php-src/* silent! exec "!ctags -R -f /opt/tags /opt/php-s
 
 set tags=./tags,tags;
 
+" Key bindings
+nnoremap ,t :w<CR>:!make -j8<CR>:!/opt/php-src/sapi/cli/php /opt/php-src/run-tests.php -x --offline %<CR>
+
